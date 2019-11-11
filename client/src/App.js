@@ -44,7 +44,7 @@ const AppContainer = styled.div`
   align-items: center;
   h2 {
     font-size: 76px;
-    margin: 24px 0 12px;
+    margin: 6px 0 12px;
   }
   h4 {
     font-size: 28px;
