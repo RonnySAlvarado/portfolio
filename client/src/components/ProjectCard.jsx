@@ -6,7 +6,7 @@ const ProjectCard = () => {
     <ProjectCardContainer>
       <Image src="/gigapetlogin.png" alt="gigapet login page" />
       <Image src="/gigapet.png" alt="gigapet dashboard" />
-      <h4>Project: GigaPets</h4>
+      <h4 style={{ fontSize: "24px", textAlign: "center" }}>GigaPets</h4>
       <h4>GitHub: https://github.com/gigapets-pt-bw</h4>
       <h4>Site: https://gigapet-bw.netlify.com/</h4>
     </ProjectCardContainer>
