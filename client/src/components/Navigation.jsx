@@ -5,42 +5,31 @@ import styled from "styled-components";
 const Navigation = () => {
   return (
     <NavContainer>
-      <FirstInitial>R.</FirstInitial>
-      <div>
-        <NavLink to="/" activeClassName="selected">
-          Home
-        </NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
-      </div>
+      <NavLink to="/" activeClassName="selected">
+        Home
+      </NavLink>
+      <NavLink to="/about">About</NavLink>
+      <NavLink to="/contact">Contact</NavLink>
     </NavContainer>
   );
 };
 
 export default Navigation;
 
-const FirstInitial = styled.h2`
-  font-size: 1.5rem;
-  border: 3px solid black;
-  width: 4rem;
-  height: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
 const NavContainer = styled.nav`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  background: black;
+  opacity: 0.5;
   a {
-    text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 24px;
     padding-left: 30px;
-    color: black;
+    color: white;
     &:hover {
-      color: red;
+      color: gold;
     }
   }
 `;
