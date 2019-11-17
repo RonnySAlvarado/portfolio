@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import styled from "styled-components";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import { Link, Route } from "react-router-dom";
 
 import Landing from "./components/Landing";
@@ -14,8 +15,8 @@ function App() {
     <AppContainer>
       <Route exact path="/" component={Landing} />
       <Route path="/projects" component={Projects} />
-      {/* <Route path="/about" component={About} />
-      <Route path="/contact" component={Contact} /> */}
+      {/* <Route path="/about" component={About} >*/}
+      <Route path="/contact" component={Contact} />
     </AppContainer>
   );
 }
