@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Landing = () => {
   return (
     <LandingContainer>
-      <div className="ronny-logo">Placeholder logo</div>
+      <div className="ronny-logo">Placeholder</div>
       <div className="ronny-info">
         <h2>Ronny Alvarado</h2>
         <h4>
