@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Landing = () => {
   return (
     <LandingContainer>
-      <div className="ronny-logo">Placeholder</div>
+      <div className="ronny-logo">{"<R />"}</div>
       <div className="ronny-info">
         <h2>Ronny Alvarado</h2>
         <h4>
@@ -45,10 +45,15 @@ const LandingContainer = styled.div`
     text-align: center;
   }
   .ronny-logo {
-    border: 1px solid white;
+    border: 2px solid white;
     width: 100px;
     height: 100px;
     margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 32px;
   }
   .ronny-routes {
     margin-top: 24px;
