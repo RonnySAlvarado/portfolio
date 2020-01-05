@@ -73,9 +73,14 @@ const Contact = () => {
 export default Contact;
 
 const Form = styled.form`
-  max-width: 600px;
+  max-width: 500px;
+  width: 100%;
+  margin-top: 150px;
   h3 {
     color: white;
+  }
+  @media (max-width: 500px) {
+    width: 80%;
   }
 `;
 
@@ -89,6 +94,7 @@ const Input = styled.input`
 const TextArea = styled.textarea`
   border-radius: 5px;
   border: 1px solid white;
+  width: 100%;
 `;
 
 const Buttons = styled.div`

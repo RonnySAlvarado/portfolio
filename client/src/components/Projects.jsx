@@ -51,11 +51,11 @@ const ProjectCard = ({
   return (
     <ProjectCardContainer>
       <h4>{name}</h4>
-      <p>{description}</p>
+      <p className="description">{description}</p>
       <a href={deployedUrl}>
         <Image src={`/${name}img.png`} alt="project home page and dashboard" />
       </a>
-      <p>{stack}</p>
+      <p className="stack">{stack}</p>
       <a className="github-link" href={githubUrl}>
         See the Code
       </a>
@@ -136,44 +136,80 @@ const swing = keyframes`
 `;
 
 const Image = styled.img`
-  width: 100%;
+  height: 40rem;
   &:hover {
     -webkit-animation: ${webkit_swing} 1s ease;
     animation: ${swing} 1s ease;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
   }
+  @media (max-width: 1300px) {
+    margin: 20px 0;
+  }
+  @media (max-width: 500px) {
+    height: 30rem;
+    margin-top: 50px;
+    width: 80%;
+  }
 `;
 
 const ProjectList = styled.div`
   width: 100%;
   display: flex;
+  margin-top: 80px;
   justify-content: space-evenly;
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+  @media (max-width: 500px) {
+    margin-top: 135px;
+  }
 `;
 
 const ProjectCardContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400px;
+  width: 40rem;
   color: white;
   h4 {
-    font-size: 48px;
+    font-size: 2.4rem;
     text-align: center;
     margin: 0 0 20px 0;
+    @media (max-width: 1300px) {
+      margin: 20px 0 0 0;
+    }
   }
   p {
-    height: 70px;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  .description {
+    height: 7rem;
+    @media (max-width: 1300px) {
+      height: 0;
+      margin-bottom: 2rem;
+    }
   }
   .github-link {
     width: 36%;
     margin-top: 20px;
-    text-decoration: none;
-    font-size: 24px;
+    font-size: 2.4rem;
     text-align: center;
     color: white;
-    border-bottom: 1px dotted white;
+    @media (max-width: 1300px) {
+      margin: 2rem;
+    }
+  }
+  @media (max-width: 1300px) {
+    width: 100%;
+    border-bottom: 2px solid white;
+  }
+  a {
+    display: flex;
+    justify-content: center;
   }
 `;

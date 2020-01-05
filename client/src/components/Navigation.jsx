@@ -19,18 +19,28 @@ export default Navigation;
 
 const NavContainer = styled.nav`
   position: absolute;
-  top: 0;
-  width: 100%;
-  height: 40px;
+  width: 99%;
   text-align: center;
   background: black;
   opacity: 0.5;
+  padding: 1rem;
   a {
-    font-size: 24px;
+    font-size: 2.4rem;
     padding-left: 30px;
     color: white;
     &:hover {
       color: gold;
+    }
+  }
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    a {
+      border-bottom: 2px solid white;
+      text-decoration: none;
+      padding: 0;
     }
   }
 `;

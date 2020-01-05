@@ -1,12 +1,10 @@
 import React from "react";
 import "./App.css";
-import Navigation from "./components/Navigation";
 import Projects from "./components/Projects";
-import Footer from "./components/Footer";
 import styled from "styled-components";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import { Link, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 import Landing from "./components/Landing";
 
@@ -26,12 +24,16 @@ export default App;
 const AppContainer = styled.div`
   height: 100vh;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/fineas-anton-stock-photo.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* overflow: hidden; */
+  @media (max-width: 500px) {
+    align-items: flex-start;
+    height: 100%;
+  }
 `;
