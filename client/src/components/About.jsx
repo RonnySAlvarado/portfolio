@@ -146,7 +146,6 @@ const TechStackContainer = styled.div`
   color: white;
   display: flex;
   width: 50%;
-  font-size: 1.6rem;
   h2 {
     margin: 0;
   }
@@ -165,6 +164,12 @@ const TechStack = styled.div`
   width: 50%;
   flex-direction: column;
   align-items: center;
+  h2 {
+    font-size: 2.4rem;
+  }
+  @media (max-width: 500px) {
+    font-size: 1.6rem;
+  }
 `;
 
 const CurrentlyLearning = styled.div`
@@ -177,14 +182,27 @@ const CurrentlyLearning = styled.div`
   text-align: center;
   ul {
     padding: 0;
+    font-size: 2rem;
+    @media (max-width: 500px) {
+      font-size: 1.5rem;
+    }
+  }
+  h2 {
+    font-size: 2.4rem;
   }
 `;
 
 const Tech = styled.div`
   display: flex;
   ul {
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    li {
+      @media (max-width: 500px) {
+        font-size: 1.5rem;
+      }
+    }
   }
 `;
