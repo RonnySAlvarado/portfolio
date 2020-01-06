@@ -71,6 +71,9 @@ const ProjectPageContainer = styled.div`
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media (max-width: 1300px) {
     height: 100%;
   }

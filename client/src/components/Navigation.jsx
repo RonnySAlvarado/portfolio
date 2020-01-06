@@ -19,7 +19,7 @@ export default Navigation;
 
 const NavContainer = styled.nav`
   position: relative;
-  width: 98.9%;
+  width: 95%;
   text-align: center;
   background: black;
   opacity: 0.5;
