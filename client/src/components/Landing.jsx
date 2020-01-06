@@ -43,6 +43,7 @@ const ContentContainer = styled.div`
       margin: 6px 0 12px;
       @media (max-width: 500px) {
         border-top: 2px solid white;
+        font-size: 4.8rem;
       }
     }
     h4 {
@@ -53,6 +54,7 @@ const ContentContainer = styled.div`
         border-bottom: 1px solid white;
         margin-bottom: 0;
         padding: 20px 0;
+        font-size: 2rem;
       }
     }
     @media (max-width: 500px) {
@@ -70,7 +72,7 @@ const ContentContainer = styled.div`
     font-weight: bold;
     font-size: 32px;
     @media (max-width: 500px) {
-      margin-bottom: 30px;
+      margin: 30px 0;
     }
   }
   .ronny-routes {
@@ -124,9 +126,13 @@ const LandingPageContainer = styled.div`
     url("/fineas-anton-stock-photo.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  overflow: hidden;
   height: 100vh;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 500px) {
+    height: 100%;
+  }
 `;

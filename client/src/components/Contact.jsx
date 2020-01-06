@@ -81,6 +81,9 @@ const FormPageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 500px) {
+    height: 100%;
+  }
 `;
 
 const Form = styled.form`
@@ -92,7 +95,6 @@ const Form = styled.form`
   }
   @media (max-width: 500px) {
     width: 80%;
-    height: 100vh;
   }
 `;
 
