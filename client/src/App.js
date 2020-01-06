@@ -21,19 +21,4 @@ function App() {
 
 export default App;
 
-const AppContainer = styled.div`
-  height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/fineas-anton-stock-photo.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  /* overflow: hidden; */
-  @media (max-width: 500px) {
-    align-items: flex-start;
-    height: 100%;
-  }
-`;
+const AppContainer = styled.div``;

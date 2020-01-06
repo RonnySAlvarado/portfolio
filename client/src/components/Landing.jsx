@@ -4,56 +4,59 @@ import styled from "styled-components";
 
 const Landing = () => {
   return (
-    <LandingContainer>
-      <div className="ronny-logo">{"<R />"}</div>
-      <div className="ronny-info">
-        <h2>Ronny Alvarado</h2>
-        <h4>
-          ⛏ Environmental Geologist ⛏
-          <br />
-          💻 and Full Stack Software Engineer 💻
-        </h4>
-      </div>
-      <div className="ronny-routes">
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contact">Contact</Link>
-      </div>
-    </LandingContainer>
+    <LandingPageContainer>
+      <ContentContainer>
+        <div className="ronny-logo">{"<R />"}</div>
+        <div className="ronny-info">
+          <h2>Ronny Alvarado</h2>
+          <h4>
+            ⛏ Environmental Geologist ⛏
+            <br />
+            💻 Full Stack Software Engineer 💻
+          </h4>
+        </div>
+        <div className="ronny-routes">
+          <Link to="/about">About</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/contact">Contact</Link>
+        </div>
+      </ContentContainer>
+    </LandingPageContainer>
   );
 };
 
 export default Landing;
 
-const LandingContainer = styled.div`
-  color: white;
+const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
-  h2 {
-    font-size: 7.6rem;
-    margin: 6px 0 12px;
-    @media (max-width: 500px) {
-      font-size: 3.2rem;
-    }
-  }
-  h4 {
-    font-size: 2.8rem;
-    margin: 0 0 24px;
-    @media (max-width: 500px) {
-      font-size: 2rem;
-    }
-  }
+  width: 50%;
   .ronny-info {
     width: 100%;
     border-top: 1px dashed white;
     border-bottom: 1px dashed white;
     text-align: center;
+    h2 {
+      font-size: 7.6rem;
+      margin: 6px 0 12px;
+      @media (max-width: 500px) {
+        border-top: 2px solid white;
+      }
+    }
+    h4 {
+      font-size: 2.8rem;
+      margin: 0 0 24px;
+      @media (max-width: 500px) {
+        border-top: 2px solid white;
+        border-bottom: 1px solid white;
+        margin-bottom: 0;
+        padding: 20px 0;
+      }
+    }
     @media (max-width: 500px) {
-      border-top: 2px solid white;
-      border-bottom: none;
+      border: none;
     }
   }
   .ronny-logo {
@@ -89,7 +92,7 @@ const LandingContainer = styled.div`
       flex-direction: column;
       margin-top: 0;
       a {
-        border: 2px solid white;
+        border-bottom: 2px solid white;
         width: 100vw;
         text-align: center;
         height: 5rem;
@@ -99,7 +102,31 @@ const LandingContainer = styled.div`
       }
     }
   }
-  @media (max-width: 500px) {
-    margin-top: 30px;
+  @media (max-width: 1150px) {
+    width: 60%;
   }
+  @media (max-width: 950px) {
+    width: 70%;
+  }
+  @media (max-width: 815px) {
+    width: 80%;
+  }
+  @media (max-width: 600px) {
+    width: 90%;
+  }
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+`;
+
+const LandingPageContainer = styled.div`
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/fineas-anton-stock-photo.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

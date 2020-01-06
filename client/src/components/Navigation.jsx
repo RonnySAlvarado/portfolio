@@ -18,8 +18,8 @@ const Navigation = () => {
 export default Navigation;
 
 const NavContainer = styled.nav`
-  position: absolute;
-  width: 99%;
+  position: relative;
+  width: 98.9%;
   text-align: center;
   background: black;
   opacity: 0.5;
@@ -35,12 +35,12 @@ const NavContainer = styled.nav`
   @media (max-width: 500px) {
     display: flex;
     flex-direction: column;
-    width: 100%;
     padding: 0;
+    width: 100%;
     a {
       border-bottom: 2px solid white;
       text-decoration: none;
-      padding: 0;
+      padding: 15px;
     }
   }
 `;

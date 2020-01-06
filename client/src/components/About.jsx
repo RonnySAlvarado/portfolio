@@ -5,16 +5,15 @@ import Navigation from "./Navigation";
 
 const About = () => {
   return (
-    <>
+    <AboutContainer>
       <Navigation />
-      <AboutContainer>
+      <AllText>
         <HeaderText>
-          Hello!
           <Image src="/ronnyprofilepic.jpg" alt="Ronny profile" />
           I’m Ronny, an Environmental Geologist and Full Stack Software Engineer
           based in Houston, TX.
         </HeaderText>
-        <Text>
+        <ParagraphText>
           Following my graduation from the University of Houston with a degree
           in Geology, I worked as a Field Scientist, collecting soil and water
           data in order to create long-term plans to restore contaminated
@@ -22,75 +21,88 @@ const About = () => {
           of my life-long passions by attending Lambda School. As a student and
           Team/Section Lead at Lambda, I encourage team-building and creative
           problem-solving, and consistently look for new challenges.
-        </Text>
-        <TechStackContainer>
-          <TechStack>
-            <h2>Skills</h2>
-            <Tech>
-              <ul>
-                <li>HTML &amp; CSS</li>
-                <li>LESS/Sass</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>React Router</li>
-              </ul>
-              <ul>
-                <li>Redux</li>
-                <li>Context API</li>
-                <li>Node</li>
-                <li>Express</li>
-                <li>SQL</li>
-              </ul>
-              <ul>
-                <li>SQLite/PostgreSQL</li>
-                <li>Git/GitHub</li>
-                <li>React Testing Library</li>
-                <li>Supertest</li>
-                <li>Python</li>
-              </ul>
-            </Tech>
-          </TechStack>
-          <CurrentlyLearning>
-            <h2>Currently Learning...</h2>
+        </ParagraphText>
+      </AllText>
+      <TechStackContainer>
+        <TechStack>
+          <h2>Skills</h2>
+          <Tech>
             <ul>
-              <li>GraphQL</li>
-              <li>Apollo</li>
-              <li>Prisma</li>
-              <li>Web Sockets</li>
+              <li>HTML &amp; CSS</li>
+              <li>LESS/Sass</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>React Router</li>
             </ul>
-          </CurrentlyLearning>
-        </TechStackContainer>
-      </AboutContainer>
-    </>
+            <ul>
+              <li>Redux</li>
+              <li>Context API</li>
+              <li>Node</li>
+              <li>Express</li>
+              <li>SQL</li>
+            </ul>
+            <ul>
+              <li>SQLite/PostgreSQL</li>
+              <li>Git/GitHub</li>
+              <li>React Testing Library</li>
+              <li>Supertest</li>
+              <li>Python</li>
+            </ul>
+          </Tech>
+        </TechStack>
+        <CurrentlyLearning>
+          <h2>Currently Learning...</h2>
+          <ul>
+            <li>GraphQL</li>
+            <li>Apollo</li>
+            <li>Prisma</li>
+            <li>Web Sockets</li>
+          </ul>
+        </CurrentlyLearning>
+      </TechStackContainer>
+    </AboutContainer>
   );
 };
 
 export default About;
 
-const Image = styled.img`
-  border-radius: 10px;
-  width: 20%;
-  margin: 10px 0;
-  @media (max-width: 1300px) {
-    width: 50%;
-  }
-`;
-
 const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin-top: 5%;
+  align-items: center;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/fineas-anton-stock-photo.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  @media (max-width: 1300px) {
+    height: 100%;
+  }
+`;
+
+const AllText = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+`;
+
+const Image = styled.img`
+  border-radius: 10px;
+  margin: 10px 0;
+  width: 30%;
   @media (max-width: 800px) {
-    margin-top: 60px;
+    width: 50%;
   }
   @media (max-width: 500px) {
-    width: 100%;
-    margin-top: 150px;
+    width: 70%;
   }
 `;
 
 const HeaderText = styled.h1`
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,9 +112,16 @@ const HeaderText = styled.h1`
   text-align: center;
   margin-bottom: 10px;
   font-size: 2rem;
+  @media (max-width: 800px) {
+    width: 90%;
+  }
+  @media (max-width: 500px) {
+    width: 90%;
+  }
 `;
 
-const Text = styled.p`
+const ParagraphText = styled.p`
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,16 +131,20 @@ const Text = styled.p`
   font-size: 2rem;
   text-align: justify;
   margin: 0 0 30px 0;
+  @media (max-width: 800px) {
+    width: 90%;
+  }
   @media (max-width: 500px) {
     font-size: 1.6rem;
     padding: 0 10px;
+    width: 90%;
   }
 `;
 
 const TechStackContainer = styled.div`
   color: white;
   display: flex;
-  width: 100%;
+  width: 50%;
   font-size: 1.6rem;
   h2 {
     margin: 0;
@@ -129,6 +152,10 @@ const TechStackContainer = styled.div`
   @media (max-width: 1300px) {
     flex-direction: column;
     align-items: center;
+  }
+  @media (max-width: 800px) {
+    font-size: 2rem;
+    width: 90%;
   }
 `;
 

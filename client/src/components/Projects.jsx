@@ -34,14 +34,14 @@ const projectsArray = [
 
 const Projects = () => {
   return (
-    <>
+    <ProjectPageContainer>
       <Navigation />
       <ProjectList>
         {projectsArray.map(project => {
           return <ProjectCard project={project} />;
         })}
       </ProjectList>
-    </>
+    </ProjectPageContainer>
   );
 };
 
@@ -64,6 +64,17 @@ const ProjectCard = ({
 };
 
 export default Projects;
+
+const ProjectPageContainer = styled.div`
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/fineas-anton-stock-photo.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  @media (max-width: 1300px) {
+    height: 100%;
+  }
+`;
 
 const webkit_swing = keyframes`
 {
@@ -156,15 +167,12 @@ const Image = styled.img`
 const ProjectList = styled.div`
   width: 100%;
   display: flex;
-  margin-top: 80px;
+  margin-top: 1%;
   justify-content: space-evenly;
   @media (max-width: 1300px) {
     flex-direction: column;
     align-items: center;
-    margin-top: 60px;
-  }
-  @media (max-width: 500px) {
-    margin-top: 135px;
+    margin-top: 0;
   }
 `;
 
@@ -180,6 +188,7 @@ const ProjectCardContainer = styled.div`
     margin: 0 0 20px 0;
     @media (max-width: 1300px) {
       margin: 20px 0 0 0;
+      font-size: 3.2rem;
     }
   }
   p {
@@ -190,9 +199,14 @@ const ProjectCardContainer = styled.div`
   .description {
     height: 7rem;
     @media (max-width: 1300px) {
-      height: 0;
+      height: 4rem;
       margin-bottom: 2rem;
+      font-size: 2rem;
+      width: 100%;
     }
+  }
+  .stack {
+    margin-top: 10px;
   }
   .github-link {
     width: 36%;

@@ -32,7 +32,7 @@ const Contact = () => {
   };
 
   return (
-    <>
+    <FormPageContainer>
       <Navigation />
       <Form onSubmit={e => handleSubmit(e)}>
         <h3>NAME</h3>
@@ -66,21 +66,33 @@ const Contact = () => {
           <button>Cancel</button>
         </Buttons>
       </Form>
-    </>
+    </FormPageContainer>
   );
 };
 
 export default Contact;
 
+const FormPageContainer = styled.div`
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/fineas-anton-stock-photo.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 const Form = styled.form`
   max-width: 500px;
   width: 100%;
-  margin-top: 150px;
+  margin-top: 1%;
   h3 {
     color: white;
   }
   @media (max-width: 500px) {
     width: 80%;
+    height: 100vh;
   }
 `;
 
