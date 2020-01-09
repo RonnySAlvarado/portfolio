@@ -77,12 +77,13 @@ const FormPageContainer = styled.div`
     url("/fineas-anton-stock-photo.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   @media (max-width: 500px) {
-    height: 100%;
+    padding-bottom: 30px;
   }
 `;
 

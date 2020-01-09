@@ -70,13 +70,11 @@ const ProjectPageContainer = styled.div`
     url("/fineas-anton-stock-photo.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media (max-width: 1300px) {
-    height: 100%;
-  }
+  min-height: 100vh;
+  height: 100%;
 `;
 
 const webkit_swing = keyframes`

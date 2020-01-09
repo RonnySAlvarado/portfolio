@@ -75,11 +75,8 @@ const AboutContainer = styled.div`
     url("/fineas-anton-stock-photo.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  min-height: 800px;
-  height: 100vh;
-  @media (max-width: 1300px) {
-    height: 100%;
-  }
+  min-height: 100vh;
+  height: 100%;
 `;
 
 const AllText = styled.div`

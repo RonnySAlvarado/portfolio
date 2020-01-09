@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+// import Footer from "./Footer";
 
 const Landing = () => {
   return (
@@ -20,6 +21,7 @@ const Landing = () => {
           <Link to="/projects">Projects</Link>
           <Link to="/contact">Contact</Link>
         </div>
+        {/* <Footer /> */}
       </ContentContainer>
     </LandingPageContainer>
   );
@@ -28,6 +30,7 @@ const Landing = () => {
 export default Landing;
 
 const ContentContainer = styled.div`
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,7 +53,7 @@ const ContentContainer = styled.div`
       font-size: 2.8rem;
       margin: 0 0 24px;
       @media (max-width: 500px) {
-        border-top: 2px solid white;
+        /* border-top: 2px solid white; */
         border-bottom: 1px solid white;
         margin-bottom: 0;
         padding: 20px 0;
@@ -93,6 +96,7 @@ const ContentContainer = styled.div`
     @media (max-width: 500px) {
       flex-direction: column;
       margin-top: 0;
+      height: 40%;
       a {
         border-bottom: 2px solid white;
         width: 100vw;
@@ -118,6 +122,8 @@ const ContentContainer = styled.div`
   }
   @media (max-width: 500px) {
     width: 100%;
+    height: 100vh;
+    justify-content: flex-start;
   }
 `;
 
@@ -127,12 +133,10 @@ const LandingPageContainer = styled.div`
   background-size: 100% 100%;
   background-repeat: no-repeat;
   overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 500px) {
-    height: 100%;
-  }
 `;
