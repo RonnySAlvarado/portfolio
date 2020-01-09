@@ -45,7 +45,7 @@ const ContentContainer = styled.div`
       font-size: 7.6rem;
       margin: 6px 0 12px;
       @media (max-width: 500px) {
-        border-top: 2px solid white;
+        border-top: 4px solid white;
         font-size: 4.8rem;
       }
     }
@@ -53,7 +53,6 @@ const ContentContainer = styled.div`
       font-size: 2.8rem;
       margin: 0 0 24px;
       @media (max-width: 500px) {
-        /* border-top: 2px solid white; */
         border-bottom: 1px solid white;
         margin-bottom: 0;
         padding: 20px 0;
@@ -96,15 +95,17 @@ const ContentContainer = styled.div`
     @media (max-width: 500px) {
       flex-direction: column;
       margin-top: 0;
-      height: 40%;
+      height: 60%;
       a {
-        border-bottom: 2px solid white;
+        border: 4px solid white;
         width: 100vw;
-        text-align: center;
-        height: 5rem;
-        font-size: 2rem;
+        height: 100%;
+        font-size: 4rem;
         font-weight: bold;
-        padding-top: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
       }
     }
   }
