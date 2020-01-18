@@ -9,7 +9,7 @@ const About = () => {
       <Navigation />
       <AllText>
         <HeaderText>
-          <Image src="/ronnyprofilepic.jpg" alt="Ronny profile" />
+          <Image src="https://i.imgur.com/97FR8fv.jpg" alt="Ronny profile" />
           I’m Ronny, an Environmental Geologist and Full Stack Software Engineer
           based in Houston, TX.
         </HeaderText>
