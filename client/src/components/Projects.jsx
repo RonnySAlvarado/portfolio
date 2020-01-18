@@ -6,6 +6,7 @@ import Navigation from "./Navigation";
 const projectsArray = [
   {
     name: "GigaPets",
+    image: "https://i.imgur.com/sYjLAqe.png",
     githubUrl: "https://github.com/gigapets-pt-bw",
     deployedUrl: "https://gigapet-bw.netlify.com/",
     description: "A web app that allows users to create and feed virtual pets",
@@ -14,6 +15,7 @@ const projectsArray = [
   },
   {
     name: "HiveStack",
+    image: "https://i.imgur.com/eI9sjwW.png",
     githubUrl: "https://github.com/wheretocode/WhereToCode",
     deployedUrl: "http://www.thehivestack.com/",
     description:
@@ -23,6 +25,7 @@ const projectsArray = [
   },
   {
     name: "WeddingPlanner",
+    image: "https://i.imgur.com/H06QLnn.png",
     githubUrl: "https://github.com/wedding-planner-portfolio",
     deployedUrl: "https://lambda-buildweek-wedding-planner.netlify.com/",
     description:
@@ -46,14 +49,14 @@ const Projects = () => {
 };
 
 const ProjectCard = ({
-  project: { name, githubUrl, deployedUrl, description, stack }
+  project: { name, githubUrl, deployedUrl, description, stack, image }
 }) => {
   return (
     <ProjectCardContainer>
       <h4>{name}</h4>
       <p className="description">{description}</p>
       <a href={deployedUrl}>
-        <Image src={`/${name}img.png`} alt="project home page and dashboard" />
+        <Image src={image} alt="project home page and dashboard" />
       </a>
       <p className="stack">{stack}</p>
       <a className="github-link" href={githubUrl}>
@@ -67,7 +70,7 @@ export default Projects;
 
 const ProjectPageContainer = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/fineas-anton-stock-photo.jpg");
+    url("https://i.imgur.com/0pnAsBg.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;
