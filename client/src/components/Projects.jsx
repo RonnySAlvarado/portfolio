@@ -24,6 +24,15 @@ const projectsArray = [
       "React | React Router | Styled-Components | Firebase | Google Maps API | Speedtest | Express | PostgreSQL"
   },
   {
+    name: "Recharts + Websocket Project",
+    image: "https://i.imgur.com/nU8Wu7M.jpg",
+    githubUrl: "https://github.com/RonnySAlvarado/Socketio-project",
+    deployedUrl: "https://websocket-data-charts-renderer.netlify.com/",
+    description:
+      "A web app that utilizes websocket to simulate incoming data and renders the information using a charts library",
+    stack: "React | React Router | Recharts | Styled-Components | Socket.io"
+  },
+  {
     name: "WeddingPlanner",
     image: "https://i.imgur.com/H06QLnn.png",
     githubUrl: "https://github.com/wedding-planner-portfolio",
