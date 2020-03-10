@@ -28,31 +28,34 @@ const About = () => {
           <h2>Skills</h2>
           <Tech>
             <ul>
-              <li>HTML &amp; CSS</li>
+              <li>HTML</li>
+              <li>CSS</li>
               <li>LESS/Sass</li>
+              <li>Styled Components</li>
               <li>JavaScript</li>
-              <li>React</li>
-              <li>React Router</li>
             </ul>
             <ul>
+              <li>React</li>
+              <li>React Router</li>
               <li>Redux</li>
-              <li>Context API</li>
               <li>Node</li>
               <li>Express</li>
-              <li>SQL</li>
             </ul>
             <ul>
               <li>SQLite/PostgreSQL</li>
               <li>Git/GitHub</li>
-              <li>React Testing Library</li>
-              <li>Supertest</li>
-              <li>Python</li>
+              <li>Netlify</li>
+              <li>Heroku</li>
+              <li>Bcryptjs</li>
+              <li>JWT</li>
             </ul>
           </Tech>
         </TechStack>
         <CurrentlyLearning>
           <h2>Currently Learning...</h2>
           <ul>
+            <li>Python</li>
+            <li>Flask</li>
             <li>GraphQL</li>
             <li>Apollo</li>
             <li>Prisma</li>
