@@ -17,7 +17,7 @@ const projectsArray = [
     name: "HiveStack",
     image: "https://i.imgur.com/eI9sjwW.png",
     githubUrl: "https://github.com/wheretocode/WhereToCode",
-    deployedUrl: "http://www.thehivestack.com/",
+    deployedUrl: "https://thehivestack.netlify.app/",
     description:
       "A community-driven web app that allows users to search for nearby locations for reliable internet in order to work remotely, study, or stream",
     stack:
