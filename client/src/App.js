@@ -9,7 +9,10 @@ const App = () => {
         <HeroSection>
           <HeroText>
             <HeroTitle>Ronny Alvarado</HeroTitle>
-            <HeroSubtitle>Staff Software Engineer at MANTL</HeroSubtitle>
+            <HeroSubtitle>
+              Staff Software Engineer at MANTL, an Alkami Technology solution
+              team.
+            </HeroSubtitle>
             <HeroTagline>
               Building reliable, user-focused products and leading teams to ship
               high-impact software.
@@ -50,7 +53,7 @@ const App = () => {
           <Timeline>
             <TimelineItem>
               <TimelineHeader>
-                <Role>MANTL</Role>
+                <Role>MANTL, an Alkami Technology solution team</Role>
                 <Meta>Staff Software Engineer · ~5 years</Meta>
               </TimelineHeader>
               <TimelineBody>
